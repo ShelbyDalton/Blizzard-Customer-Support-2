@@ -1,0 +1,26 @@
+.players {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.player {
+    background-color: rgb(105, 238, 255);
+    border: 3px outset rgb(3, 181, 194);
+    color: black;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 35%;
+}
+
+/* .support_footer {
+    margin: 1rem 0 0.25rem 0;
+    font-style: oblique;
+} */
+
+.player_header {
+    font-size: larger;
+    font-weight: 700;
+    line-height: 3rem;
+}

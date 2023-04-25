@@ -1,0 +1,23 @@
+.navbar {
+    font-family: "Noto Sans", Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    border: 3px outset rgb(0, 13, 128);
+    background-color: rgb(59, 104, 255);
+    font-weight: 700;
+    padding: 4px;
+}
+
+.navbar__item {
+    flex-basis: 20%;
+    list-style-type: none;
+}
+
+.navbar__logout {
+    margin-left: auto;
+}
+
+.navbar__link {
+    color: white;
+}

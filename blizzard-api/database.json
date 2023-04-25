@@ -1,0 +1,210 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Shelby Dalton",
+      "email": "sdalton@blizzard.org",
+      "isStaff": true
+    },
+    {
+      "id": 2,
+      "fullName": "Bobby Kotick",
+      "email": "bkotick@blizzard.org",
+      "isStaff": true
+    },
+    {
+      "id": 3,
+      "fullName": "Mike Ybarra",
+      "email": "mybarra@blizzard.org",
+      "isStaff": true
+    },
+    {
+      "id": 4,
+      "fullName": "Ion Hazzikostas",
+      "email": "ihazzikostas@blizzard.org",
+      "isStaff": true
+    },
+    {
+      "id": 5,
+      "fullName": "Pála Halcyone",
+      "email": "halcyone@somewhere.net",
+      "isStaff": false
+    },
+    {
+      "id": 6,
+      "fullName": "Helen Emer",
+      "email": "helen@osu.edu",
+      "isStaff": false
+    },
+    {
+      "id": 7,
+      "fullName": "Rakel Taran",
+      "email": "rakeltaran@emailhost.com",
+      "isStaff": false
+    },
+    {
+      "id": 8,
+      "fullName": "Lúðvík Penelope",
+      "email": "penelope@penelope.org",
+      "isStaff": false
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "address": "750 Mount Tabor",
+      "phoneNumber": "917-323-7036",
+      "userId": 5
+    },
+    {
+      "id": 2,
+      "address": "474 Rosewood Court",
+      "phoneNumber": "507-370-5542",
+      "userId": 6
+    },
+    {
+      "id": 3,
+      "address": "3404 Francis Mine",
+      "phoneNumber": "916-548-7774",
+      "userId": 7
+    },
+    {
+      "id": 4,
+      "address": "4455 Point Street",
+      "phoneNumber": "773-220-7402",
+      "userId": 8
+    }
+  ],
+  "supports": [
+    {
+      "id": 1,
+      "gameId": 1,
+      "rate": 81.47,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "gameId": 2,
+      "rate": 97.39,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "gameId": 3,
+      "rate": 29.45,
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "gameId": 4,
+      "rate": 95.45,
+      "userId": 4
+    }
+  ],
+  "games": [
+    {
+      "id": 1,
+      "gameName": "Diablo"
+    },
+    {
+      "id": 2,
+      "gameName": "Overwatch 2"
+    },
+    {
+      "id": 3,
+      "gameName": "Hearthstone"
+    },
+    {
+      "id": 4,
+      "gameName": "World of Warcraft"
+    }
+  ],
+  "helpTickets": [
+    {
+      "id": 1,
+      "userId": 5,
+      "description": "Cannot play newest hero after reaching the unlock point for it in the game pass.",
+      "gameId": 2,
+      "dateCompleted": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)"
+    },
+    {
+      "id": 2,
+      "userId": 6,
+      "description": "Game will not let me sign in on the mobile version.",
+      "gameId": 3,
+      "dateCompleted": "2023-04-19T15:24:45.009Z"
+    },
+    {
+      "userId": 7,
+      "description": "Character not gaining xp as I complete content.",
+      "gameId": 1,
+      "dateCompleted": "2023-04-24T19:12:47.383Z",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "userId": 8,
+      "description": "(Item) dropped for me but I it is not in my inventory and did not get mailed to me.",
+      "gameId": 4,
+      "dateCompleted": ""
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "description": "I purchased a cosmetic with my in-game currency, but the item did not unlock for me.",
+      "gameId": 2,
+      "dateCompleted": "Fri Apr 29 2022 21:24:29 GMT-0500 (Central Daylight Time)"
+    },
+    {
+      "userId": 7,
+      "description": "I completed the weekly bonus event but the reward given was a quality lower than expected.",
+      "gameId": 4,
+      "dateCompleted": "2023-04-24T19:13:33.621Z",
+      "id": 6
+    },
+    {
+      "userId": 8,
+      "description": "I need the radio button to work on the ticket creation screen. ",
+      "gameId": true,
+      "dateCompleted": "",
+      "id": 7
+    }
+  ],
+  "supportTickets": [
+    {
+      "id": 1,
+      "supportId": 3,
+      "serviceTicketId": 1
+    },
+    {
+      "id": 2,
+      "supportId": 2,
+      "serviceTicketId": 5
+    },
+    {
+      "id": 3,
+      "supportId": 1,
+      "serviceTicketId": 4
+    },
+    {
+      "supportId": 1,
+      "serviceTicketId": 2,
+      "id": 5
+    },
+    {
+      "supportId": 1,
+      "helpTicketId": 2,
+      "id": 6
+    },
+    {
+      "supportId": 4,
+      "helpTicketId": 6,
+      "id": 7
+    },
+    {
+      "supportId": 4,
+      "helpTicketId": 4,
+      "id": 8
+    }
+  ]
+}
