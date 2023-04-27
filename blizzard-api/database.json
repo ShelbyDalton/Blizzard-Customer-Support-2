@@ -47,6 +47,18 @@
       "fullName": "Lúðvík Penelope",
       "email": "penelope@penelope.org",
       "isStaff": false
+    },
+    {
+      "email": "asmongold@blizzard.net",
+      "fullName": "Asmongold",
+      "isStaff": true,
+      "id": 9
+    },
+    {
+      "email": "janedoe@nss.org",
+      "fullName": "Jane Doe",
+      "isStaff": false,
+      "id": 10
     }
   ],
   "players": [
@@ -73,6 +85,12 @@
       "gameId": "4",
       "yearsPlayed": "16",
       "userId": 8
+    },
+    {
+      "id": 5,
+      "gameId": "2",
+      "yearsPlayed": "8",
+      "userId": 10
     }
   ],
   "supports": [
@@ -99,6 +117,12 @@
       "gameId": 4,
       "rate": 95.45,
       "userId": 4
+    },
+    {
+      "id": 5,
+      "gameId": 4,
+      "rate": 200.98,
+      "userId": 9
     }
   ],
   "games": [
@@ -189,6 +213,48 @@
       "gameId": 4,
       "dateCompleted": "",
       "id": 11
+    },
+    {
+      "userId": 5,
+      "description": "Need more tickets for more testing ",
+      "gameId": 2,
+      "dateCompleted": "",
+      "id": 12
+    },
+    {
+      "userId": 6,
+      "description": "still need more tickets",
+      "gameId": 3,
+      "dateCompleted": "",
+      "id": 13
+    },
+    {
+      "userId": 8,
+      "description": "NEED MOOOOREEE TICKETSSSSSSSS",
+      "gameId": 1,
+      "dateCompleted": "",
+      "id": 14
+    },
+    {
+      "userId": 8,
+      "description": "Another one just to be safe",
+      "gameId": 4,
+      "dateCompleted": "",
+      "id": 15
+    },
+    {
+      "userId": 7,
+      "description": "And another...",
+      "gameId": 2,
+      "dateCompleted": "",
+      "id": 16
+    },
+    {
+      "userId": 7,
+      "description": "Aaaaaaaand annoootherrrrr",
+      "gameId": 3,
+      "dateCompleted": "",
+      "id": 17
     }
   ],
   "supportTickets": [
@@ -236,6 +302,26 @@
       "supportId": 2,
       "helpTicketId": 9,
       "id": 10
+    },
+    {
+      "supportId": 5,
+      "helpTicketId": 10,
+      "id": 11
+    },
+    {
+      "supportId": 1,
+      "helpTicketId": 14,
+      "id": 12
+    },
+    {
+      "supportId": 5,
+      "helpTicketId": 15,
+      "id": 13
+    },
+    {
+      "supportId": 3,
+      "helpTicketId": 17,
+      "id": 14
     }
   ]
 }

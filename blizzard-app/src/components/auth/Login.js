@@ -33,9 +33,9 @@ export const Login = () => {
         <main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Blizzard Support 2!</h1>
-                    <h2 >Please sign in</h2>
-                    <fieldset>
+                    <h1 className="loginHeader">Blizzard Support 2!</h1>
+                    <h2 className="loginTagline">Please sign in</h2>
+                    <fieldset className="emailInput">
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             value={email}
@@ -44,15 +44,15 @@ export const Login = () => {
                             placeholder="Email address"
                             required autoFocus />
                     </fieldset>
-                    <fieldset>
+                    <fieldset className="loginButtonCss">
                         <button className="loginButton" type="submit">
                             Sign in
                         </button>
                     </fieldset>
+                    <section className="link--register">
+                        <Link to="/register">I don't have an account yet</Link>
+                    </section>
                 </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">I don't have an account yet</Link>
             </section>
         </main>
     )

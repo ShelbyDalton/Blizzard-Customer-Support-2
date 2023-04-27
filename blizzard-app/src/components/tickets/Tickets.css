@@ -12,7 +12,7 @@
 }
 
 .TicketSearch {
-    margin: 7px;
+    margin-left: 7rem;
     padding: 4px;
 }
 
@@ -21,17 +21,8 @@
     border: 3px inset rgb(3, 7, 241);
 }
 
-.emergencyButton {
-    background-color: rgb(255, 167, 53);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: outset 3px rgb(134, 15, 15);
-    padding: 5px;
-}
-
-.emergencyButton:hover {
-    background-color: rgb(255, 0, 0);
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+.listTitle {
+    margin-left: 7rem;
 }
 
 .showAllButton {
@@ -53,7 +44,8 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     border: outset 3px rgb(44, 190, 247);
     padding: 5px;
-    margin-left: 15px;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
 }
 
 .createTicket:hover {
@@ -81,6 +73,7 @@
     margin-top: 15px;
     padding: 5px;
     background-color: rgba(162, 0, 255, 0.527);
+    margin-left: 5rem;
 }
 
 /* .ticket__finish {
@@ -112,4 +105,12 @@
 .gameSelector {
     background-color: rgb(1, 1, 129);
     padding: 3px;
+}
+
+a:visited {
+    color: rgb(177, 227, 255);
+}
+
+a:link {
+    color: rgb(255, 236, 62);
 }

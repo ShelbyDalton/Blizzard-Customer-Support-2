@@ -58,7 +58,7 @@ export const Register = () => {
     return (
         <main style={{ textAlign: "center" }}>
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Blizzard Support:</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Register for Blizzard Support:</h1>
                 <fieldset>
                     <label htmlFor="fullName"> Full Name </label>
                     <input onChange={updatePlayer}
@@ -81,7 +81,7 @@ export const Register = () => {
                     <label htmlFor="email"> I work for Blizzard </label>
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <button className="registerButton" type="submit"> Register </button>
                 </fieldset>
             </form>
         </main>

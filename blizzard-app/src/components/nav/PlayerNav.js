@@ -9,6 +9,7 @@ export const PlayerNav = () => {
     return (
 
         <ul className="navbar">
+            <img src="blizzlogo.jpg" alt="logo" />
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/tickets">Tickets</Link>
             </li>
@@ -20,12 +21,12 @@ export const PlayerNav = () => {
                     ? <li className="navbar__item navbar__logout">
                         <Link className="navbar__link" to="" onClick={() => {
                             localStorage.removeItem("blizzard_user")
-                            navigate("/", {replace: true})
+                            navigate("/", { replace: true })
                         }}>Logout</Link>
                     </li>
                     : ""
             }
-        </ul>
+        </ul >
     )
 }
 

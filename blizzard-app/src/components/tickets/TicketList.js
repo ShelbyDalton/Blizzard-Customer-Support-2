@@ -115,7 +115,7 @@ export const TicketList = ({ searchTermState }) => {
                 </>
         }
 
-        <h2>List of Tickets</h2>
+        <h2 className="listTitle">List of Tickets</h2>
         <article className="tickets">
             {
                 filteredTickets.map(

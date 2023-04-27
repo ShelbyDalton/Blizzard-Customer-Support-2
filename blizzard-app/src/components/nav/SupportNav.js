@@ -8,6 +8,7 @@ export const SupportNav = () => {
     return (
 
         <ul className="navbar">
+            <img src="blizzlogo.jpg" alt="logo" />
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/tickets">Tickets</Link>
             </li>

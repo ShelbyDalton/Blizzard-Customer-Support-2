@@ -3,4 +3,10 @@
     padding: 6px;
     width: 25%;
     background-color: rgb(2, 0, 145);
+    margin: 5rem;
+    text-align: center;
+}
+
+.tagline {
+    margin: 5rem;
 }

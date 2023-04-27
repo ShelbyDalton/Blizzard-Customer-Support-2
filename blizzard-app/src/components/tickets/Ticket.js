@@ -104,7 +104,7 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gam
 
 
     return <div className="wholeTicket">
-        <header>
+        <header className="editLink">
             {
                 currentUser.staff
                     ? `Ticket ${ticketObject.id}`
@@ -113,8 +113,8 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gam
         </header>
         <section>{ticketObject.description}</section>
         <section>Game: </section>
-        {   gamesObject.map(games => {
-            return <section /*type="radio"*/>Game: {games.gameName}</section>
+        {   gamesObject.map(game => {
+            return <section /*type="radio"*/>{game.gameName}</section>
         }
         )
         }

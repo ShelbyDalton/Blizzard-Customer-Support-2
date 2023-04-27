@@ -6,9 +6,9 @@
 }
 
 .player {
-    background-color: rgb(145, 241, 253);
+    background-color: rgb(39, 125, 255);
     border: 3px outset rgb(0, 81, 255);
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 0.5rem;
     margin: 0.5rem;
     width: 35%;

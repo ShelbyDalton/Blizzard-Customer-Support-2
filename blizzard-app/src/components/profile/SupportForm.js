@@ -86,7 +86,7 @@ export const SupportForm = () => {
                         </select>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset className="rateEntry">
                     <div className="form-group">
                         <label htmlFor="name">Hourly rate:</label>
                         <input type="number"

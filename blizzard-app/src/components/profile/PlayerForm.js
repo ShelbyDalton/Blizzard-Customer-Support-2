@@ -86,7 +86,7 @@ export const PlayerForm = () => {
                         </select>
                     </div>
                 </fieldset>
-                <fieldset>
+                <fieldset className="rateEntry">
                     <div className="form-group">
                         <label htmlFor="name">Number of years played:</label>
                         <input type="text"
