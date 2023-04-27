@@ -52,26 +52,26 @@
   "players": [
     {
       "id": 1,
-      "address": "750 Mount Tabor",
-      "phoneNumber": "917-323-7036",
+      "gameId": "1",
+      "yearsPlayed": "13",
       "userId": 5
     },
     {
       "id": 2,
-      "address": "474 Rosewood Court",
-      "phoneNumber": "507-370-5542",
+      "gameId": "2",
+      "yearsPlayed": "5",
       "userId": 6
     },
     {
       "id": 3,
-      "address": "3404 Francis Mine",
-      "phoneNumber": "916-548-7774",
+      "gameId": "3",
+      "yearsPlayed": "7",
       "userId": 7
     },
     {
       "id": 4,
-      "address": "4455 Point Street",
-      "phoneNumber": "773-220-7402",
+      "gameId": "4",
+      "yearsPlayed": "16",
       "userId": 8
     }
   ],
@@ -79,7 +79,7 @@
     {
       "id": 1,
       "gameId": 1,
-      "rate": 81.47,
+      "rate": 82.47,
       "userId": 1
     },
     {
@@ -163,11 +163,25 @@
       "id": 6
     },
     {
-      "userId": 8,
-      "description": "I need the radio button to work on the ticket creation screen. ",
-      "gameId": true,
+      "userId": 5,
+      "description": "description",
+      "gameId": 2,
       "dateCompleted": "",
-      "id": 7
+      "id": 8
+    },
+    {
+      "userId": 5,
+      "description": "description of problem",
+      "gameId": 3,
+      "dateCompleted": "",
+      "id": 9
+    },
+    {
+      "userId": 8,
+      "description": "brief description",
+      "gameId": 4,
+      "dateCompleted": "",
+      "id": 10
     }
   ],
   "supportTickets": [
@@ -205,6 +219,11 @@
       "supportId": 4,
       "helpTicketId": 4,
       "id": 8
+    },
+    {
+      "supportId": 1,
+      "helpTicketId": 3,
+      "id": 9
     }
   ]
 }

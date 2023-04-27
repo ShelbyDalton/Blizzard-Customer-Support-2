@@ -10,7 +10,7 @@ export const TicketList = ({ searchTermState }) => {
     const [tickets, setTickets] = useState([])
     const [supports, setSupports] = useState([])
     const [filteredTickets, setFiltered] = useState([])
-    const [game, setGame] = useState(false)
+    const [games, setGames] = useState([])
     const [openOnly, updateOpenOnly] = useState(false)
     
     const navigate = useNavigate()
@@ -123,7 +123,8 @@ export const TicketList = ({ searchTermState }) => {
                     supports={supports} 
                     getAllTickets={getAllTickets}
                     currentUser={blizzardUserObject} 
-                    ticketObject={ticket} />
+                    ticketObject={ticket}
+                    gamesObject={games} />
                 )
             }
         </article>

@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 
 
 export const TicketEdit = () => {
+    const [games, setGames] = useState([])
     const [ticket, assignTicket] = useState({
         description: "",
         game: ""
@@ -20,6 +21,17 @@ export const TicketEdit = () => {
             })
     }, [ticketId])
 
+    useEffect(
+        () => {
+
+            fetch('http://localhost:8088/games')
+                .then(response => response.json())
+                .then((gamesArray) => {
+                    setGames(gamesArray)
+                })
+        },
+        []
+    )
 
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
@@ -62,7 +74,7 @@ export const TicketEdit = () => {
             </div>
         </fieldset>
         <fieldset>
-            <div className="form-group">
+            {/* <div className="form-group">
                 <label htmlFor="name">Game:</label>
                 <input type="radio"
                     checked={ticket.gameId}
@@ -73,7 +85,27 @@ export const TicketEdit = () => {
                             assignTicket(copy)
                         }
                     } />
-            </div>
+            </div> */}
+
+
+            <select
+            className="gameSelector"
+                        value={games?.id}
+                        onChange={
+                            (event) => {
+                            const copy = { ...ticket }
+                            copy.gameId = parseInt(event.target.value)
+                            assignTicket(copy)
+                        }
+                        }
+                        >
+                        <option value="0">Choose...</option>
+                        {
+                            games.map(game => <option key={`game--${game.id}`} value={game.id}>{game.gameName}</option>)
+                        }
+                    </select>
+
+
         </fieldset>
         <button
             onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}

@@ -25,7 +25,7 @@ export const PlayerDetails = () => {
 
         <header className="player_header">{player?.user?.fullName}</header>
         <div>Email: {player?.user?.email}</div>
-        <div>Address: {player.address}</div>
-        <div>Phone Number: {player.phoneNumber}</div>
+        <div>Favorite Game: {player.gameName}</div>
+        <div>Years Played: {player.yearsPlayed}</div>
     </section>
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
 export const SupportForm = () => {
+    const [games, setGames] = useState([])
     const [profile, updateProfile] = useState({
         specialty: "",
         rate: 0,
@@ -19,6 +20,17 @@ export const SupportForm = () => {
         }
     }, [feedback])
 
+    useEffect(
+        () => {
+
+            fetch('http://localhost:8088/games')
+                .then(response => response.json())
+                .then((gamesArray) => {
+                    setGames(gamesArray)
+                })
+        },
+        []
+    )
 
     useEffect(() => {
         fetch(`http://localhost:8088/supports?userId=${blizzardUserObject.id}`)
@@ -52,22 +64,26 @@ export const SupportForm = () => {
                 {feedback}
             </div>
             <form className="profile">
-                <h2 className="profile__title">New Service Ticket</h2>
+
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="game">Game:</label>
-                        <input
-                            required autoFocus
-                            type="text"
-                            className="form-control"
-                            value={profile.gameId}
+                        <select
+                            className="gameSelector"
+                            value={games?.id}
                             onChange={
-                                (evt) => {
+                                (event) => {
                                     const copy = { ...profile }
-                                    copy.gameId = evt.target.value
+                                    copy.gameId = parseInt(event.target.value)
                                     updateProfile(copy)
                                 }
-                            } />
+                            }
+                        >
+                            <option value="0">Choose...</option>
+                            {
+                                games.map(game => <option key={`game--${game.id}`} value={game.id}>{game.gameName}</option>)
+                            }
+                        </select>
                     </div>
                 </fieldset>
                 <fieldset>

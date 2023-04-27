@@ -108,3 +108,8 @@
 .ticket__finish {
     background-color: rgb(3, 16, 133);
 }
+
+.gameSelector {
+    background-color: rgb(1, 1, 129);
+    padding: 3px;
+}

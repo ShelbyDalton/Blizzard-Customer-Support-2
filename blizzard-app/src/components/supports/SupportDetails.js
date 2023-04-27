@@ -25,7 +25,7 @@ export const SupportDetails = () => {
 
         <header className="support_header">{support?.user?.fullName}</header>
         <div>Email: {support?.user?.email}</div>
-        <div>Game: {support.specialty}</div>
+        <div>Game: {support.gameId}</div>
         <div>Rate: {support.rate}</div>
         <footer className="support_footer">Currently working on {support?.supportTickets?.length} tickets</footer>
     </section>

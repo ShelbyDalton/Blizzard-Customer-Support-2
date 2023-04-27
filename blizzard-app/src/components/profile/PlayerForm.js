@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export const PlayerForm = () => {
- 
+    const [games, setGames] = useState([])
     const [profile, updateProfile] = useState({
         address: "",
         phoneNumber: 0,
@@ -20,6 +20,17 @@ export const PlayerForm = () => {
         }
     }, [feedback])
 
+    useEffect(
+        () => {
+
+            fetch('http://localhost:8088/games')
+                .then(response => response.json())
+                .then((gamesArray) => {
+                    setGames(gamesArray)
+                })
+        },
+        []
+    )
 
     useEffect(() => {
         fetch(`http://localhost:8088/players?userId=${blizzardUserObject.id}`)
@@ -53,34 +64,38 @@ export const PlayerForm = () => {
                 {feedback}
             </div>
             <form className="profile">
-                <h2 className="profile__title">New Help Ticket</h2>
+            
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="game">Address:</label>
-                        <input
-                            required autoFocus
-                            type="text"
-                            className="form-control"
-                            value={profile.address}
+                        <label htmlFor="game">Favorite Game:</label>
+                        <select
+                            className="gameSelector"
+                            value={games?.id}
                             onChange={
-                                (evt) => {
+                                (event) => {
                                     const copy = { ...profile }
-                                    copy.address = evt.target.value
+                                    copy.gameId = parseInt(event.target.value)
                                     updateProfile(copy)
                                 }
-                            } />
+                            }
+                        >
+                            <option value="0">Choose...</option>
+                            {
+                                games.map(game => <option key={`game--${game.id}`} value={game.id}>{game.gameName}</option>)
+                            }
+                        </select>
                     </div>
                 </fieldset>
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="name">Phone number:</label>
+                        <label htmlFor="name">Number of years played:</label>
                         <input type="text"
                             className="form-control"
-                            value={profile.phoneNumber}
+                            value={profile.yearsPlayed}
                             onChange={
                                 (evt) => {
                                     const copy = { ...profile }
-                                    copy.phoneNumber = evt.target.value
+                                    copy.yearsPlayed = evt.target.value
                                     updateProfile(copy)
                                 }
                             } />

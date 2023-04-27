@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { getAllTickets } from "./TicketList.js"
 
 
-export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets }) => {
+export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gamesObject }) => {
 
     let assignedSupport = null
 
@@ -14,14 +14,14 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets }) =
     const userSupport = supports.find(support => support.userId === currentUser.id)
 
     const canClose = () => {
-        if (userSupport?.id === assignedSupport?.id && ticketObject.dateCompleted === "") {
-            return <button onClick={closeTicket} className="ticket__finish">Finish</button>
+        if (userSupport?.id === assignedSupport?.id && ticketObject.dateCompleted === "" && currentUser.staff === true) {
+            return <button onClick={closeTicket} className="ticket__finish">Close Ticket</button>
         } else {
             return ""
         }
     }
 
- 
+
     const closeTicket = () => {
 
         const copy = {
@@ -39,9 +39,9 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets }) =
             },
             body: JSON.stringify(copy)
         })
-        .then(response => response.json())
+            .then(response => response.json())
 
-        .then(getAllTickets)
+            .then(getAllTickets)
     }
 
 
@@ -64,27 +64,28 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets }) =
     const buttonOrNoButton = () => {
         if (currentUser.staff) {
             return <button className="claimButton"
-            onClick = {() => {
-                fetch('http://localhost:8088/supportTickets', {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        supportId: userSupport.id,
-                        helpTicketId: ticketObject.id
+                onClick={() => {
+                    fetch('http://localhost:8088/supportTickets', {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            supportId: userSupport.id,
+                            helpTicketId: ticketObject.id
+                        })
                     })
-                })
-                .then(response => response.json())
-                .then(() => {
-                    getAllTickets()
-                })
-            }}
+                        .then(response => response.json())
+                        .then(() => {
+                            getAllTickets()
+                        })
+                }}
             >Claim</button>
         } else {
             return ""
         }
     }
+
 
 
     return <div className="wholeTicket">
@@ -96,12 +97,15 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets }) =
             }
         </header>
         <section>{ticketObject.description}</section>
-        <section>Game: {ticketObject.gameId ? "Diablo" : "Overwatch 2" }</section>
+        {   gamesObject.map(game => {
+            return <section type="radio">Game: {game.gameName}</section>
+        })
+        }
         <footer className="footer">
             {
                 ticketObject.supportTickets.length
-                ? `Currently being worked on by ${assignedSupport !== null ? assignedSupport?.user?.fullName : ""}`
-                : buttonOrNoButton()
+                    ? `Currently being worked on by ${assignedSupport !== null ? assignedSupport?.user?.fullName : ""}`
+                    : buttonOrNoButton()
             }
             {
                 canClose()
