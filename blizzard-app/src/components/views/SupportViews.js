@@ -5,15 +5,16 @@ import { SupportDetails } from "../supports/SupportDetails.js"
 import { SupportList } from "../supports/SupportList.js"
 import { PlayerDetails } from "../players/PlayerDetails.js"
 import { Profile } from "../profile/Profile.js"
+import "./ApplicationViews.css"
 
 export const SupportViews = () => {
     return (
         <Routes>
             <Route path="/" element={
                 <>
-                    <h1>Blizzard Support 2!</h1>
-                    <div>We thought we would try a version 2 of support since Overwatch 2 was so well liked!</div>
-
+                    <h1 className="headline">Blizzard Support 2!</h1>
+                    <div className="tagline">We thought we would try a version 2 of support since (practically) no one complained about Overwatch 2!</div>
+                    
                     <Outlet />
                 </>
             }>

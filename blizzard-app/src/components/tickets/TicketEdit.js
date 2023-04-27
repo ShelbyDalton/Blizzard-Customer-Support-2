@@ -87,23 +87,24 @@ export const TicketEdit = () => {
                     } />
             </div> */}
 
-
+            <label>Game:</label>
+            <div className="form-group"></div>
             <select
-            className="gameSelector"
-                        value={games?.id}
-                        onChange={
-                            (event) => {
-                            const copy = { ...ticket }
-                            copy.gameId = parseInt(event.target.value)
-                            assignTicket(copy)
-                        }
-                        }
-                        >
-                        <option value="0">Choose...</option>
-                        {
-                            games.map(game => <option key={`game--${game.id}`} value={game.id}>{game.gameName}</option>)
-                        }
-                    </select>
+                className="gameSelector"
+                value={games?.id}
+                onChange={
+                    (event) => {
+                        const copy = { ...ticket }
+                        copy.gameId = parseInt(event.target.value)
+                        assignTicket(copy)
+                    }
+                }
+            >
+                <option value="0">Choose...</option>
+                {
+                    games.map(game => <option key={`game--${game.id}`} value={game.id}>{game.gameName}</option>)
+                }
+            </select>
 
 
         </fieldset>

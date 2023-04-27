@@ -182,6 +182,13 @@
       "gameId": 4,
       "dateCompleted": "",
       "id": 10
+    },
+    {
+      "userId": 6,
+      "description": "More tickets to have more tickets",
+      "gameId": 4,
+      "dateCompleted": "",
+      "id": 11
     }
   ],
   "supportTickets": [
@@ -224,6 +231,11 @@
       "supportId": 1,
       "helpTicketId": 3,
       "id": 9
+    },
+    {
+      "supportId": 2,
+      "helpTicketId": 9,
+      "id": 10
     }
   ]
 }

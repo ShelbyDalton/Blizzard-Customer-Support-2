@@ -34,7 +34,7 @@ export const Login = () => {
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>Blizzard Support 2!</h1>
-                    <h2>Please sign in</h2>
+                    <h2 >Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"

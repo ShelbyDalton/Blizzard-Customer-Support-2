@@ -50,7 +50,7 @@ fieldset {
     z-index: 1;
     min-height: 25rem;
     min-width: 45rem;
-    background-color: rgb(51, 144, 250);
+    background-color: rgb(72, 158, 255);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
 }

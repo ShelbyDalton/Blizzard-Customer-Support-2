@@ -3,14 +3,15 @@ import { TicketForm } from "../tickets/TicketForm"
 import { TicketList } from "../tickets/TicketList"
 import { Profile } from "../profile/Profile"
 import { TicketEdit } from "../tickets/TicketEdit"
+import "./ApplicationViews.css"
 
 export const PlayerViews = () => {
     return (
         <Routes>
             <Route path="/" element={
                 <>
-                    <h1>Blizzard Support 2!</h1>
-                    <div>We thought we would try a version 2 of support since Overwatch 2 was so well liked!</div>
+                    <h1 className="headline">Blizzard Support 2!</h1>
+                    <div className="tagline">We thought we would try a version 2 of support since (practically) no one complained about Overwatch 2!</div>
 
                     <Outlet />
                 </>

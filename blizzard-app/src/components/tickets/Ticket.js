@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom"
 import { getAllTickets } from "./TicketList.js"
+import { useEffect } from "react"
+import { useState } from "react"
 
 
 export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gamesObject }) => {
+
+    const [games, setGames] = useState([])
 
     let assignedSupport = null
 
@@ -21,6 +25,17 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gam
         }
     }
 
+    useEffect(
+        () => {
+
+            fetch('http://localhost:8088/games')
+                .then(response => response.json())
+                .then((gamesObject) => {
+                    setGames(gamesObject)
+                })
+        },
+        []
+    )
 
     const closeTicket = () => {
 
@@ -97,9 +112,11 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gam
             }
         </header>
         <section>{ticketObject.description}</section>
-        {   gamesObject.map(game => {
-            return <section type="radio">Game: {game.gameName}</section>
-        })
+        <section>Game: </section>
+        {   gamesObject.map(games => {
+            return <section /*type="radio"*/>Game: {games.gameName}</section>
+        }
+        )
         }
         <footer className="footer">
             {
