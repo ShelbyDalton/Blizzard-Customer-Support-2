@@ -88,7 +88,7 @@
     },
     {
       "id": 5,
-      "gameId": 2,
+      "gameId": 4,
       "yearsPlayed": "8",
       "userId": 10
     }
@@ -152,13 +152,6 @@
       "dateCompleted": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)"
     },
     {
-      "id": 2,
-      "userId": 6,
-      "description": "Game will not let me sign in on the mobile version.",
-      "gameId": 3,
-      "dateCompleted": "2023-04-19T15:24:45.009Z"
-    },
-    {
       "userId": 7,
       "description": "Character not gaining xp as I complete content.",
       "gameId": 1,
@@ -188,130 +181,120 @@
     },
     {
       "userId": 5,
-      "description": "description",
+      "description": "I was supposed to receive a reward for reaching level 60 in the battle pass, but I did not get the reward. ",
       "gameId": 2,
-      "dateCompleted": "",
+      "dateCompleted": "2023-05-01T16:10:35.147Z",
       "id": 8
     },
     {
       "userId": 5,
-      "description": "description of problem",
+      "description": "Game is not letting me take my turn. ",
       "gameId": 3,
       "dateCompleted": "",
       "id": 9
     },
     {
       "userId": 8,
-      "description": "brief description",
+      "description": "I tagged the Time Lost Proto drake but did not receive the mount when I tried to loot it because my inventory was full and I was not fast enough to make space for it. It was then not mailed to me like it should have been. ",
       "gameId": 4,
       "dateCompleted": "",
       "id": 10
     },
     {
-      "userId": 6,
-      "description": "More tickets to have more tickets",
-      "gameId": 4,
-      "dateCompleted": "",
-      "id": 11
-    },
-    {
       "userId": 5,
-      "description": "Need more tickets for more testing ",
+      "description": "I get permanently stuck in log in queue, it seems my account cannot be authorized. ",
       "gameId": 2,
       "dateCompleted": "",
       "id": 12
     },
     {
       "userId": 6,
-      "description": "still need more tickets",
+      "description": "Some of my cards are missing (maybe? I have no idea how this game works really..).",
       "gameId": 3,
       "dateCompleted": "",
       "id": 13
     },
     {
       "userId": 8,
-      "description": "NEED MOOOOREEE TICKETSSSSSSSS",
+      "description": "Something must have happened with the servers because my character progress from the last three days is missing. ",
       "gameId": 1,
       "dateCompleted": "",
       "id": 14
     },
     {
       "userId": 8,
-      "description": "Another one just to be safe",
+      "description": "My vigor for my dragon-riding mount is not recharging as it should when I am on the ground or in \"exhilaration\". I am stuck at one vigor charge and I can't even use that one. ",
       "gameId": 4,
       "dateCompleted": "",
       "id": 15
     },
     {
       "userId": 7,
-      "description": "And another...",
+      "description": "I opened a loot box and no loot was given. ",
       "gameId": 2,
       "dateCompleted": "",
       "id": 16
     },
     {
       "userId": 7,
-      "description": "Aaaaaaaand annoootherrrrr",
+      "description": "After beginning an online game, I get disconnected. ",
       "gameId": 3,
       "dateCompleted": "",
       "id": 17
     },
     {
       "userId": 10,
-      "description": "This person has no tickets yet",
+      "description": "I was rewarded a loot box for downloading the game but did not receive any rewards from it. ",
       "gameId": 3,
       "dateCompleted": "",
       "id": 18
     },
     {
       "userId": 10,
-      "description": "This person needs more tickets",
+      "description": "My character progress from the last three days is missing. Please help!",
       "gameId": 1,
       "dateCompleted": "",
       "id": 19
     },
     {
       "userId": 10,
-      "description": "One more ticket perhaps",
+      "description": "I seem to have lost (X) trinket on my character, (XXX). The item restoration on the website is not working. Is it possible for my trinket to be restored?",
       "gameId": 4,
       "dateCompleted": "",
       "id": 20
+    },
+    {
+      "userId": 6,
+      "description": "Did not receive loot for completing (quest name) quest. ",
+      "gameId": 1,
+      "dateCompleted": "",
+      "id": 21
     }
   ],
   "supportTickets": [
     {
-      "id": 1,
-      "supportId": 3,
-      "serviceTicketId": 1
-    },
-    {
-      "id": 2,
       "supportId": 2,
-      "serviceTicketId": 5
+      "helpTicketId": 1,
+      "id": 4
     },
     {
-      "id": 3,
-      "supportId": 1,
-      "serviceTicketId": 4
-    },
-    {
-      "supportId": 1,
-      "serviceTicketId": 2,
+      "supportId": 2,
+      "helpTicketId": 8,
       "id": 5
     },
     {
-      "supportId": 1,
-      "helpTicketId": 2,
+      "supportId": 2,
+      "helpTicketId": 16,
       "id": 6
     },
     {
-      "supportId": 4,
-      "helpTicketId": 6,
+      "supportId": 3,
+      "helpTicketId": 13,
       "id": 7
     },
     {
-      "supportId": 4,
-      "helpTicketId": 4,
+      "supportId": 3,
+      "helpTicketId": 18,
       "id": 8
     },
     {
@@ -320,39 +303,24 @@
       "id": 9
     },
     {
-      "supportId": 2,
-      "helpTicketId": 9,
+      "supportId": 1,
+      "helpTicketId": 21,
       "id": 10
     },
     {
-      "supportId": 5,
+      "supportId": 4,
       "helpTicketId": 10,
       "id": 11
     },
     {
-      "supportId": 1,
-      "helpTicketId": 14,
+      "supportId": 4,
+      "helpTicketId": 20,
       "id": 12
     },
     {
       "supportId": 5,
-      "helpTicketId": 15,
+      "helpTicketId": 6,
       "id": 13
-    },
-    {
-      "supportId": 3,
-      "helpTicketId": 17,
-      "id": 14
-    },
-    {
-      "supportId": 2,
-      "helpTicketId": 5,
-      "id": 15
-    },
-    {
-      "supportId": 2,
-      "helpTicketId": 16,
-      "id": 16
     }
   ]
 }
