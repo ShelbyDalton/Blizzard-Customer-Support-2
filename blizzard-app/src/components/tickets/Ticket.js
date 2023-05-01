@@ -113,9 +113,12 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gam
         </header>
         <section>{ticketObject.description}</section>
         <section>Game: </section>
-        {   gamesObject.map(game => {
-            return <section /*type="radio"*/>{game.gameName}</section>
-        }
+        {games.map(game => (
+            <section key={game.id}>
+                {ticketObject.gameId === game.id ?
+                    <label >{game.gameName}</label> : null}
+            </section>
+        )
         )
         }
         <footer className="footer">
@@ -131,5 +134,5 @@ export const Ticket = ({ ticketObject, currentUser, supports, getAllTickets, gam
                 deleteButton()
             }
         </footer>
-    </div>
+    </div >
 }

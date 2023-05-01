@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 export const SupportForm = () => {
     const [games, setGames] = useState([])
     const [profile, updateProfile] = useState({
-        specialty: "",
+        gameId: "",
         rate: 0,
         userId: 0
     })
@@ -67,7 +67,19 @@ export const SupportForm = () => {
 
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="game">Game:</label>
+                        <section className="currentGame">
+                        <label>Current Game: </label>
+                        <section>{games.map(game => (
+                            <section key={game.id}>
+                                {profile.gameId === game.id ?
+                                    <label >{game.gameName}</label> : null}
+                            </section>
+                        )
+                        )
+                        }
+                        </section>
+                        </section>
+                        <label htmlFor="game">Choose new game:</label>
                         <select
                             className="gameSelector"
                             value={games?.id}

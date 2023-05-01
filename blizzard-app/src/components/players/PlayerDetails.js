@@ -6,6 +6,19 @@ export const PlayerDetails = () => {
     const { playerId } = useParams()
     const [player, updatePlayer] = useState({})
 
+    const [games, setGames] = useState([])
+
+    useEffect(
+        () => {
+
+            fetch('http://localhost:8088/games')
+                .then(response => response.json())
+                .then((gamesObject) => {
+                    setGames(gamesObject)
+                })
+        },
+        []
+    )
 
     useEffect(
         () => {
@@ -25,7 +38,14 @@ export const PlayerDetails = () => {
 
         <header className="player_header">{player?.user?.fullName}</header>
         <div>Email: {player?.user?.email}</div>
-        <div>Favorite Game: {player.gameName}</div>
+        <div>Favorite Game: {games.map(game => (
+            <section key={game.id}>
+                {player.gameId === game.id ?
+                    <label >{game.gameName}</label> : null}
+            </section>
+        )
+        )
+        }</div>
         <div>Years Played: {player.yearsPlayed}</div>
     </section>
 }

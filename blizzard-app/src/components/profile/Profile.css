@@ -22,3 +22,8 @@
 .support {
     margin-left: 5rem; 
 }
+
+.currentGame {
+    font-size: larger;
+    margin-bottom: 2rem;
+}

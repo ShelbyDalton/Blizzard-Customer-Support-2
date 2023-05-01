@@ -3,8 +3,8 @@ import { useEffect, useState } from "react"
 export const PlayerForm = () => {
     const [games, setGames] = useState([])
     const [profile, updateProfile] = useState({
-        address: "",
-        phoneNumber: 0,
+        favoriteGame: "",
+        yearsPlayed: 0,
         userId: 0
     })
 
@@ -44,7 +44,7 @@ export const PlayerForm = () => {
     const handleSaveButtonClick = (event) => {
         event.preventDefault()
 
-      
+
         fetch(`http://localhost:8088/players/${profile.id}`, {
             method: "PUT",
             headers: {
@@ -64,10 +64,22 @@ export const PlayerForm = () => {
                 {feedback}
             </div>
             <form className="profile">
-            
+
                 <fieldset>
                     <div className="form-group">
-                        <label htmlFor="game">Favorite Game:</label>
+                    <section className="currentGame">
+                                <label>Current Favorite Game: </label>
+                                <section>{games.map(game => (
+                                    <section key={game.id}>
+                                        {profile.gameId === game.id ?
+                                            <label >{game.gameName}</label> : null}
+                                    </section>
+                                )
+                                )
+                                }
+                                </section>
+                            </section>
+                        <label htmlFor="game">Choose New Favorite Game:</label>
                         <select
                             className="gameSelector"
                             value={games?.id}

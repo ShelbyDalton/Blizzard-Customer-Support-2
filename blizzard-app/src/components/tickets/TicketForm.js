@@ -74,7 +74,7 @@ export const TicketForm = () => {
                         } />
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset className="createTicketGameSelection">
 
                 <label>Game:</label>
                 <div className="form-group">

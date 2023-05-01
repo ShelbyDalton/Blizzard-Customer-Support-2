@@ -64,31 +64,31 @@
   "players": [
     {
       "id": 1,
-      "gameId": "1",
+      "gameId": 1,
       "yearsPlayed": "13",
       "userId": 5
     },
     {
       "id": 2,
-      "gameId": "2",
+      "gameId": 2,
       "yearsPlayed": "5",
       "userId": 6
     },
     {
       "id": 3,
-      "gameId": "3",
+      "gameId": 3,
       "yearsPlayed": "7",
       "userId": 7
     },
     {
       "id": 4,
-      "gameId": "4",
+      "gameId": 4,
       "yearsPlayed": "16",
       "userId": 8
     },
     {
       "id": 5,
-      "gameId": "2",
+      "gameId": 2,
       "yearsPlayed": "8",
       "userId": 10
     }
@@ -255,6 +255,27 @@
       "gameId": 3,
       "dateCompleted": "",
       "id": 17
+    },
+    {
+      "userId": 10,
+      "description": "This person has no tickets yet",
+      "gameId": 3,
+      "dateCompleted": "",
+      "id": 18
+    },
+    {
+      "userId": 10,
+      "description": "This person needs more tickets",
+      "gameId": 1,
+      "dateCompleted": "",
+      "id": 19
+    },
+    {
+      "userId": 10,
+      "description": "One more ticket perhaps",
+      "gameId": 4,
+      "dateCompleted": "",
+      "id": 20
     }
   ],
   "supportTickets": [
@@ -322,6 +343,16 @@
       "supportId": 3,
       "helpTicketId": 17,
       "id": 14
+    },
+    {
+      "supportId": 2,
+      "helpTicketId": 5,
+      "id": 15
+    },
+    {
+      "supportId": 2,
+      "helpTicketId": 16,
+      "id": 16
     }
   ]
 }

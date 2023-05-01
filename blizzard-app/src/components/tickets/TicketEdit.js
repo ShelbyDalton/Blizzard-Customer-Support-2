@@ -6,7 +6,7 @@ export const TicketEdit = () => {
     const [games, setGames] = useState([])
     const [ticket, assignTicket] = useState({
         description: "",
-        game: ""
+        gameId: ""
     })
 
     const { ticketId } = useParams()
@@ -73,7 +73,7 @@ export const TicketEdit = () => {
                     }>{ticket.description}</textarea>
             </div>
         </fieldset>
-        <fieldset>
+        <fieldset className="editTicketCSS">
             {/* <div className="form-group">
                 <label htmlFor="name">Game:</label>
                 <input type="radio"
@@ -89,22 +89,14 @@ export const TicketEdit = () => {
 
             <label>Game:</label>
             <div className="form-group"></div>
-            <select
-                className="gameSelector"
-                value={games?.id}
-                onChange={
-                    (event) => {
-                        const copy = { ...ticket }
-                        copy.gameId = parseInt(event.target.value)
-                        assignTicket(copy)
-                    }
-                }
-            >
-                <option value="0">Choose...</option>
-                {
-                    games.map(game => <option key={`game--${game.id}`} value={game.id}>{game.gameName}</option>)
-                }
-            </select>
+            {games.map(game => (
+            <section key={game.id}>
+                {ticket.gameId === game.id ?
+                    <label >{game.gameName}</label> : null}
+            </section>
+        )
+        )
+        }
 
 
         </fieldset>
