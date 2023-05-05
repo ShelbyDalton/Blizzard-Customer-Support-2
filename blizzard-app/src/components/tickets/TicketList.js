@@ -28,22 +28,6 @@ export const TicketList = ({ searchTermState }) => {
         },
         [searchTermState]
     )
-    
-    // The second useEffect hook filters the tickets array based on the emergency state and 
-    // updates the filteredTickets state accordingly.
-
-    // useEffect(
-    //     () => {
-    //         if (emergency) {
-    //             const emergencyTickets = tickets.filter(ticket => ticket.emergency === true)
-    //             setFiltered(emergencyTickets)
-    //         } else {
-    //             setFiltered(tickets)
-    //         }
-    //     },
-    //     [emergency]
-    // )
-
 
     useEffect(
         () => {

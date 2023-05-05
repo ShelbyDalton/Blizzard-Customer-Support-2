@@ -2,8 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
 
-// Register function (also provided) which will add user to users, trouble is that it does not add
-// a newly registered employee to the employees data in database, must manually add to employees. 
+
 export const Register = () => {
     const [player, setPlayer] = useState({
         email: "",
@@ -39,11 +38,11 @@ export const Register = () => {
             .then(res => res.json())
             .then(response => {
                 if (response.length > 0) {
-                    // Duplicate email. No good.
+
                     window.alert("Account with that email address already exists")
                 }
                 else {
-                    // Good email, create user.
+
                     registerNewUser()
                 }
             })
