@@ -11,8 +11,8 @@ export const PlayerViews = () => {
             <Route path="/" element={
                 <>
                     <h1 className="headline">Blizzard Support 2!</h1>
-                    <div className="tagline">We thought we would try a version 2 of support since (practically) no one complained about Overwatch 2!</div>
-
+                    {/* <div className="tagline">We thought we would try a version 2 of support since (practically) no one complained about Overwatch 2!</div> */}
+                    {/* <img className="blizzBackground" src="blizzbackground.jpg"></img> */}
                     <Outlet />
                 </>
             }>

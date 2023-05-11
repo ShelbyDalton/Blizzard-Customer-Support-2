@@ -70,8 +70,8 @@
     },
     {
       "id": 2,
-      "gameId": 2,
-      "yearsPlayed": "5",
+      "gameId": 4,
+      "yearsPlayed": "7",
       "userId": 6
     },
     {
@@ -97,7 +97,7 @@
     {
       "id": 1,
       "gameId": 1,
-      "rate": 103.47,
+      "rate": 98.47,
       "userId": 1
     },
     {
@@ -204,15 +204,8 @@
       "userId": 5,
       "description": "I get permanently stuck in log in queue, it seems my account cannot be authorized. ",
       "gameId": 2,
-      "dateCompleted": "",
+      "dateCompleted": "2023-05-05T14:18:40.383Z",
       "id": 12
-    },
-    {
-      "userId": 6,
-      "description": "Some of my cards are missing (maybe? I have no idea how this game works really..).",
-      "gameId": 3,
-      "dateCompleted": "",
-      "id": 13
     },
     {
       "userId": 8,
@@ -269,6 +262,13 @@
       "gameId": 1,
       "dateCompleted": "",
       "id": 21
+    },
+    {
+      "userId": 6,
+      "description": "Create new ticket",
+      "gameId": 3,
+      "dateCompleted": "",
+      "id": 22
     }
   ],
   "supportTickets": [
@@ -286,11 +286,6 @@
       "supportId": 2,
       "helpTicketId": 16,
       "id": 6
-    },
-    {
-      "supportId": 3,
-      "helpTicketId": 13,
-      "id": 7
     },
     {
       "supportId": 3,
@@ -321,6 +316,11 @@
       "supportId": 5,
       "helpTicketId": 6,
       "id": 13
+    },
+    {
+      "supportId": 1,
+      "helpTicketId": 12,
+      "id": 14
     }
   ]
 }

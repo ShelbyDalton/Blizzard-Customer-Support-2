@@ -19,6 +19,7 @@
 .SearchField {
     background-color: rgb(255, 255, 255);
     border: 3px inset rgb(3, 7, 241);
+    font-size: larger;
 }
 
 .listTitle {
@@ -46,6 +47,7 @@
     padding: 5px;
     margin-left: 5rem;
     margin-bottom: 2rem;
+    font-size: larger;
 }
 
 .createTicket:hover {
@@ -60,6 +62,7 @@
     border: outset 3px rgb(70, 14, 161);
     padding: 5px;
     margin-left: 5rem;
+    font-size: larger;
 }
 
 .submitTicket:hover {
@@ -74,6 +77,7 @@
     padding: 5px;
     background-color: rgba(162, 0, 255, 0.527);
     margin-left: 5rem;
+    font-size: larger;
 }
 
 /* .ticket__finish {
@@ -105,14 +109,17 @@
 .gameSelector {
     background-color: rgb(1, 1, 129);
     padding: 3px;
+    font-size: larger;
 }
 
 a:visited {
     color: rgb(177, 227, 255);
+    font-size: larger;
 }
 
 a:link {
     color: rgb(255, 236, 62);
+    font-size: larger;
 }
 
 .ticketForm__title {
@@ -121,6 +128,7 @@ a:link {
 
 .createTicketGameSelection {
     margin-left: 5rem;
+    font-size: larger;
 }
 
 .editTicketCSS {
