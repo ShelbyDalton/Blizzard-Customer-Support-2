@@ -3,12 +3,9 @@
 Blizzard Customer Support 2
 
 PROBLEM SOLVED
-This application will solve {the problem of Blizzard’s customer service system in its current state which is totally useless} 
-for {the players of their games}. 
+This application will solve the problem of Blizzard’s customer service system in its current state which is hard to navigate for the players of their games.  
 OVERVIEW 
-The application will provide a more user friendly platform to quickly submit a ticket for a problem that a player is 
-experiencing in their favorite Blizzard game. As opposed to the wild goose chase that is in their current ticketing platform 
-to just find where to begin a ticket. 
+The application provides a more user friendly platform to quickly submit a ticket for a problem that a player is experiencing in their favorite Blizzard game. As opposed to the wild goose chase that is in their current ticketing platform to just find where to begin a ticket.
 
 
 PROJECT MVP FEATURES
